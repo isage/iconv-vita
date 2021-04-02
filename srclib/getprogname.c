@@ -244,6 +244,10 @@ getprogname (void)
         }
     }
   return NULL;
+
+# elif defined __vita__                                        /* VITA */
+  char filename[50];
+  return NULL;
 # else
 #  error "getprogname module not ported to this OS"
 # endif

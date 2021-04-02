@@ -15,6 +15,8 @@
    You should have received a copy of the GNU General Public License
    along with this program.  If not, see <https://www.gnu.org/licenses/>.  */
 
+#ifndef __vita__
+
 #include <config.h>
 
 /* Specification.  */
@@ -347,3 +349,4 @@ _gl_raise_SIGPIPE (void)
   return 0;
 }
 #endif
+#endif // __vita__
